@@ -38,6 +38,24 @@ module PrintPrimesTable
 			table = Terminal::Table.new :headings => headings, :rows => rows
 			puts table
 		end
+		class << self
+			def process_command(args,options)
+					if args.count>0
+						total = Integer(arg[0])
+						primes = Primes.new total
+					else
+						primes= Primes.new
+					end
+					primes.print_table if options.count < 1
+					options.each do |option|
+						case option
+						when '--only-primes'
+							primes.list_numbers
+						end
+					end
+
+			end
+		end
 	end
 
 end
