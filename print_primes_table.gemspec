@@ -6,10 +6,15 @@ require 'print_primes_table/version'
 Gem::Specification.new do |spec|
   spec.name          = "print_primes_table"
   spec.version       = PrintPrimesTable::VERSION
-  spec.authors       = ["Diego"]
+  spec.platform      = Gem::Platform::RUBY
+  spec.authors       = ["Diego Hernán Piccinini Lagos"]
   spec.email         = ["diego@guiasrails.es"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{This program prints out a multiplication table of the first 10 prime numbers.
+
+}
+  spec.description   = %q{The program run from a command line and print to screen one table.
+Across the top and down the left side should be the 10 primes, and the body of the table should contain the
+product of multiplying these numbers.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -17,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
-
+  spec.required_ruby_version = ">= 2.0.0"
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
 end

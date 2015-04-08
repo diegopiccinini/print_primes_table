@@ -1,6 +1,9 @@
 # PrintPrimesTable
 
-TODO: Write a gem description
+ 	This program prints out a multiplication table of the first 10 prime numbers.
+
+ 	The program run from a command line and print to screen one table.
+	Across the top and down the left side should be the 10 primes, and the body of the table should contain the product of multiplying these numbers.
 
 ## Installation
 
@@ -17,6 +20,9 @@ And then execute:
 Or install it yourself as:
 
     $ gem install print_primes_table
+
+## Ruby version
+		2.0+
 
 ## Usage
 
