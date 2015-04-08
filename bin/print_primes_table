@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+
+begin
+  require 'print_primes_table'
+  Client.get_command
+rescue LoadError => e
+  abort 'Could not load "print_primes_table"'
+end
