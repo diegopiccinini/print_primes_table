@@ -41,7 +41,7 @@ module PrintPrimesTable
 		class << self
 			def process_command(args,options)
 					if args.count>0
-						total = Integer(arg[0])
+						total = Integer(args[0])
 						primes = Primes.new total
 					else
 						primes= Primes.new
