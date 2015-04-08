@@ -7,7 +7,14 @@ module PrintPrimesTable
 			# getting commands
 			def get_command
 				begin
-					puts ARGS[0]
+
+					ARGV.each do |param|
+						case param
+						when '--only-primes'
+							primes = Primes.new
+							primes.list_numbers
+						end
+					end
 
 				rescue => err
 					puts err.message
