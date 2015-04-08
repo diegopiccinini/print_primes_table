@@ -40,6 +40,8 @@ module PrintPrimesTable
 		end
 		class << self
 			def process_command(args,options)
+				validator = Validators::ArgumentValidator.validate(args)
+				if validator == :valid
 					if args.count>0
 						total = Integer(args[0])
 						primes = Primes.new total
@@ -53,7 +55,9 @@ module PrintPrimesTable
 							primes.list_numbers
 						end
 					end
-
+				else
+					puts validator
+				end
 			end
 		end
 	end
