@@ -30,13 +30,13 @@ module PrintPrimesTable
 			puts @collection.join("\t")
 		end
 		def print_table
-table = Terminal::Table.new do |t|
-  t << ['One', 1]
-  t << :separator
-  t.add_row ['Two', 2]
-  t.add_separator
-  t.add_row ['Three', 3]
-end
+			headings =[' '] + @collection
+			rows=[]
+			@collection.each do |prime|
+				rows.push [prime] + @collection.map { |a| prime * a}
+			end
+			table = Terminal::Table.new :headings => headings, :rows => rows
+			puts table
 		end
 	end
 
