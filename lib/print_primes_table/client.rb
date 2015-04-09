@@ -10,11 +10,22 @@ module PrintPrimesTable
 
 					options = OPTIONS & ARGV
 					args = ARGV - options
-					Primes.process_command(args, options)
+					process_command(args, options)
 
 				rescue => err
 					puts err.message
 				end
+			end
+			def process_command(args,options)
+
+				options.each do |option|
+					case option
+					when '--only-primes'
+						Options::OnlyPrimesOption.process(args, options)
+					end
+				end
+				Options::DefaultOption.process(args) if options.count < 1
+
 			end
 		end
 	end

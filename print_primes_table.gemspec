@@ -1,6 +1,7 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
 require 'print_primes_table/version'
 
 Gem::Specification.new do |spec|
@@ -17,7 +18,6 @@ Across the top and down the left side should be the 10 primes, and the body of t
 product of multiplying these numbers.}
   spec.homepage      = ""
   spec.license       = "MIT"
-
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})

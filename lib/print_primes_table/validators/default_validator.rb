@@ -2,7 +2,7 @@
 module PrintPrimesTable
   # @author Diego Hernán Piccinini Lagos
 	module Validators
-		class ArgumentValidator
+		class DefaultValidator
 
 			class << self
 				def validate(args)

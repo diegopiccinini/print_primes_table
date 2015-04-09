@@ -38,28 +38,7 @@ module PrintPrimesTable
 			table = Terminal::Table.new :headings => headings, :rows => rows
 			puts table
 		end
-		class << self
-			def process_command(args,options)
-				validator = Validators::ArgumentValidator.validate(args)
-				if validator == :valid
-					if args.count>0
-						total = Integer(args[0])
-						primes = Primes.new total
-					else
-						primes= Primes.new
-					end
-					primes.print_table if options.count < 1
-					options.each do |option|
-						case option
-						when '--only-primes'
-							primes.list_numbers
-						end
-					end
-				else
-					puts validator
-				end
-			end
-		end
+
 	end
 
 end
