@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q{The program run from a command line and print to screen one table.
 Across the top and down the left side should be the 10 primes, and the body of the table should contain the
 product of multiplying these numbers.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/diegopiccinini/print_primes_table"
   spec.license       = "MIT"
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
