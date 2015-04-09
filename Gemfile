@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'terminal-table'
+gem 'yard'
 
 group :test do
   gem 'shoulda-matchers'

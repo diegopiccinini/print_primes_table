@@ -49,3 +49,9 @@ Scenario: Printing table with arguments
 			+----+----+----+----+----+-----+-----+
 
 			"""
+Scenario: Printing table with quantity less 1
+	When I run `print_primes_table -6`
+	Then it should pass with:
+			"""
+			The minimun quantity is 1
+			"""

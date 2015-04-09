@@ -4,6 +4,9 @@ module PrintPrimesTable
 	module Options
 		class DefaultOption
 			class << self
+				# procces the default option to print the table.
+				# The validator print an error if there is an exception
+				# @param args [Array] the first argument is a integer quantity of prime collection
 				def process(args)
 					validator = Validators::DefaultValidator.validate(args)
 					if validator == :valid

@@ -1,7 +1,9 @@
 
 module PrintPrimesTable
-  # @author Diego Hernán Piccinini Lagos
+
 	module Options
+		# @author Diego Hernán Piccinini Lagos
+		# to handle the help messages output
 		class HelpOption
 			MESSAGE = {:headings=> ['Option','Description'],
 				:rows => [
@@ -26,6 +28,9 @@ EOF
 			}
 
 			class << self
+				# process the --help option to show the options availables.
+				# @param args [Array] in this case is empty at first
+				# @param options [Array] if in future we will want to add options
 				def process(args,options)
 					validator = Validators::HelpValidator.validate(args)
 					if validator == :valid
