@@ -4,8 +4,9 @@ Dir[File.join(File.dirname(__FILE__),'options','*.rb')].each {|file| require fil
 
 module PrintPrimesTable
   VERSION = "0.0.1"
-  OPTIONS =['--only-primes']
+  OPTIONS =['--only-primes','--help']
   DEFAULT_TOTAL = 10
   DEFAULT_START = 2
+
 
 end

@@ -22,6 +22,8 @@ module PrintPrimesTable
 					case option
 					when '--only-primes'
 						Options::OnlyPrimesOption.process(args, options)
+					when '--help'
+						Options::HelpOption.process(args, options)
 					end
 				end
 				Options::DefaultOption.process(args) if options.count < 1

@@ -4,7 +4,6 @@ Feature: Help Option
 		When I run `print_primes_table --help`
 		Then it should pass with:
 			"""
-
 				Option			Description
 
 				(without		Print a table across the top and down the left
