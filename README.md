@@ -69,6 +69,17 @@ without options you should have this response:
 			| 29 | 58 | 87 | 145 | 203 | 319 | 377 | 493 | 551 | 667 | 841 |
 			+----+----+----+-----+-----+-----+-----+-----+-----+-----+-----+
 
+## Test
+
+It was tested and building using BDD methodolgy with cucumber and aruba.
+To test run:
+
+```bash
+
+cucumber
+
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/diegopiccinini/print_primes_table/fork )
