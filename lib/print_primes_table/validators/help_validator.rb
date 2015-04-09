@@ -1,10 +1,15 @@
 
 module PrintPrimesTable
-  # @author Diego Hernán Piccinini Lagos
+
 	module Validators
+		# @author Diego Hernán Piccinini Lagos
+		# to validate the --help option
 		class HelpValidator
 
 			class << self
+				# validate the arguments of --help option
+				# @param args [Array] the help option hasn't arguments
+				# @return [Symbol | String] :valid or an Error Message
 				def validate(args)
 					begin
 						raise ArgumentError.new(

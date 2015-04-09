@@ -53,5 +53,5 @@ Scenario: Printing table with quantity less 1
 	When I run `print_primes_table -6`
 	Then it should pass with:
 			"""
-			The minimun quantity is 1
+			The minimun quantity is 1, so -6 is not valid
 			"""

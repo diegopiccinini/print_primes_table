@@ -6,7 +6,8 @@ module PrintPrimesTable
 			MESSAGES = {
 
 				:command_wrong_arguments => "the program allowed %{max} argument maximun, you typed %{argument_num}",
-				:command_wrong_type_arguments => "Sorry, %{argument} is not an integer"
+				:command_wrong_type_arguments => "Sorry, %{argument} is not an integer",
+				:less_than_min => "The minimun quantity is %{min}, so %{argument} is not valid"
 			}
 			# initialize the message
 			# @param content [String] text message to the user
