@@ -25,5 +25,10 @@ product of multiplying these numbers.}
   spec.required_ruby_version = ">= 2.0.0"
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "terminal-table", "~> 1.4.5"
+  spec.add_development_dependency "aurba", "~> 0.6.2"
+  spec.add_development_dependency "cucumber", "~> 2.0.0"
+  spec.add_development_dependency "rspec-expectations", "~> 3.2.1"
+ 
   spec.has_rdoc = 'yard'
 end
