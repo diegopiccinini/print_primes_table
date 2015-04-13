@@ -20,7 +20,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install print_primes_table
-    $ gem install terminal-table
 
 ## Ruby version
 		2.0+
