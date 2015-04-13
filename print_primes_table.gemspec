@@ -29,6 +29,7 @@ product of multiplying these numbers.}
   spec.add_development_dependency "aurba", "~> 0.6.2"
   spec.add_development_dependency "cucumber", "~> 2.0.0"
   spec.add_development_dependency "rspec-expectations", "~> 3.2.1"
+  spec.add_runtime_dependency 'terminal-table', '~> 1.4', '>= 1.4.5'
  
   spec.has_rdoc = 'yard'
 end
